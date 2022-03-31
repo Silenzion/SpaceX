@@ -1,5 +1,5 @@
 {
-  "name": "yarus_admin",
+  "name": "spaceX",
   "version": "0.0.1",
   "scripts": {
     "serve": "vite preview",
