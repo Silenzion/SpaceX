@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
 
-  content: ["./src/**/*.vue","index.html"],
+  content: ["./src/**/*.vue", "index.html"],
 
   theme: {
     screens: {
@@ -21,9 +21,9 @@ module.exports = {
     extend: {
       colors: {
         stone: {
-          500:'#808080',
-          900:'#010001',
-        }
+          500: "#808080",
+          900: "#010001",
+        },
       },
 
       borderRadius: {
@@ -41,22 +41,37 @@ module.exports = {
         1: "1",
       },
       fontSize: {
-        xs: ['12px', {
-          lineHeight: '14px',
-        }],
-        sm: ['16px', {
-          lineHeight: '140%',
-        }],
-        base: ['18px', {
-          lineHeight: '21px',
-        }],
-        lg: ['24px', {
-          lineHeight: '140%',
-        }],
-        xl: ['64px', {
-          lineHeight: '75px',
-        }],
-      }
+        xs: [
+          "12px",
+          {
+            lineHeight: "14px",
+          },
+        ],
+        sm: [
+          "16px",
+          {
+            lineHeight: "140%",
+          },
+        ],
+        base: [
+          "18px",
+          {
+            lineHeight: "21px",
+          },
+        ],
+        lg: [
+          "24px",
+          {
+            lineHeight: "140%",
+          },
+        ],
+        xl: [
+          "64px",
+          {
+            lineHeight: "75px",
+          },
+        ],
+      },
     },
 
     spacing: {
@@ -87,8 +102,7 @@ module.exports = {
       46: "46px",
       48: "48px",
       50: "50px",
-      56: "56px",
-      57: "57px",
+      55: "55px",
       60: "60px",
       70: "70px",
       80: "80px",

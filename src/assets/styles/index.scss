@@ -1,2 +1,12 @@
 @import "tailwind";
 @import "variables";
+
+body {
+  background-color: #010001;
+  font-family: "Roboto", sans-serif;
+}
+#app{
+  width: 100%;
+  max-width: 1330px;
+  margin :0 auto;
+}
