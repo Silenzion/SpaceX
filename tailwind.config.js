@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
 
-  content: ["./src/components/**/*.vue", "./src/layouts/**/*.vue", "./src/pages/**/*.vue", "./src/modules/**/*.vue"],
+  content: ["./src/**/*.vue","index.html"],
 
   theme: {
     screens: {
