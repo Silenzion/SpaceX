@@ -34,7 +34,7 @@ const attributes: attrInterface[] = [
 ];
 </script>
 <template>
-  <div class="flex flex-col pb-120 text-white">
+  <div class="flex flex-col px-10 pb-50 text-white sm:pb-120">
     <div class="flex flex-row justify-between pt-55">
       <img src="/images/spacex.svg" alt="Logo" />
       <div class="cursor-pointer text-xs">
@@ -52,10 +52,11 @@ const attributes: attrInterface[] = [
       </div>
     </div>
     <img class="h-auto w-auto" src="/images/bg.png" alt="Earth" />
-    <div class="mb-[183px] flex flex-row items-center">
+    <div class="mb-[183px] flex flex-col items-center lg:flex-row">
       <div>
         <div class="mb-44 w-[177px] text-lg uppercase">Falcon Heavy Overview</div>
-        <div class="mb-[218px]">
+        <img class="mx-auto mb-30 block h-[420px] lg:hidden" src="/images/rocket.png" alt="rocket" />
+        <div class="mb-50 lg:mb-[218px]">
           <div v-for="(iter, index) in attributes" :key="index" class="gap mb-10 grid grid-cols-2 text-left text-base font-thin">
             <div>{{ iter.name }}</div>
             <div class="">{{ iter.value }}</div>
@@ -68,12 +69,12 @@ const attributes: attrInterface[] = [
           the equivalent of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.
         </div>
       </div>
-      <img src="/images/rocket.png" alt="rocket" />
+      <img class="hidden lg:block" src="/images/rocket.png" alt="rocket" />
     </div>
     <div class="flex flex-col items-center">
       <img class="mb-44" src="/images/spacex.svg" alt="Logo" />
-      <div class="mb-28">
-        <span v-for="(iter, index) in socials" :key="index" class="px-10 text-base">{{ iter }}</span>
+      <div class="mb-28 flex flex-row flex-wrap justify-center">
+        <span v-for="(iter, index) in socials" :key="index" class="px-10 pb-20 text-base">{{ iter }}</span>
       </div>
       <div class="mb-30 text-stone-500">For additional questions, contact rideshare@spacex.com</div>
       <button class="h-60 w-[260px] rounded-[6px] border-2 border-white">Contact us</button>
