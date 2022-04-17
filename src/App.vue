@@ -35,12 +35,12 @@ const attributes: attrInterface[] = [
 </script>
 <template>
   <div class="flex flex-col px-10 pb-50 text-white sm:pb-120">
-    <div class="flex flex-row justify-between pt-55">
+    <div class="flex flex-col items-center justify-between pt-55 sm:flex-row">
       <img src="/images/spacex.svg" alt="Logo" />
-      <div class="cursor-pointer text-xs">
+      <div class="cursor-pointer py-16 text-xs">
         <span v-for="(iter, index) in ships" :key="index" class="px-10">{{ iter }}</span>
       </div>
-      <div class="cursor-pointer text-xs text-stone-500">
+      <div class="cursor-pointer py-10 text-xs text-stone-500">
         <span v-for="(iter, index) in pages" :key="index" class="px-10">{{ iter }}</span>
       </div>
     </div>
@@ -54,7 +54,7 @@ const attributes: attrInterface[] = [
     <img class="h-auto w-auto" src="/images/bg.png" alt="Earth" />
     <div class="mb-[183px] flex flex-col items-center lg:flex-row">
       <div>
-        <div class="mb-44 w-[177px] text-lg uppercase">Falcon Heavy Overview</div>
+        <div class="mb-44 text-center text-lg uppercase sm:w-[177px]">Falcon Heavy Overview</div>
         <img class="mx-auto mb-30 block h-[420px] lg:hidden" src="/images/rocket.png" alt="rocket" />
         <div class="mb-50 lg:mb-[218px]">
           <div v-for="(iter, index) in attributes" :key="index" class="gap mb-10 grid grid-cols-2 text-left text-base font-thin">
